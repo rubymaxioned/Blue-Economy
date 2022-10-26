@@ -181,7 +181,7 @@ header { margin-bottom: 40px; }
 /*=================================
   main styling starts here
 =================================*/
-
+/*Banner section start*/
 .blue-card1 {
   height: 200px;
   margin-bottom: 20px;
@@ -208,7 +208,9 @@ h2 {
   line-height: 20px;
   text-align: center;
 }
+/*Banner section end*/
 
+/*World section start*/
 .world-content { 
   padding: 20px 5%;
   margin-bottom: 20px;
@@ -298,8 +300,46 @@ h2 {
 }
 
 .world-section .wrapper { margin-bottom: 40px; }
+/*world section end*/
 
+/*Featured section start*/
+h4 { 
+  margin-bottom: 40px;
+  color: #A3A3A3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 19px;
+  position: relative;
+}
 
+h4::after {
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  background-color: #60ABE2;
+  content: '';
+  transform: translate(-50%, 50%);
+}
+
+.timeline-section { position: relative; }
+.timeline-section li {
+  padding: 12px 5%;
+  margin-bottom: 10px;
+  border: 1px solid #ECECEC;
+}
+
+.timeline-section::before {
+  width: 2px;
+  height: 200px;
+  position: absolute;
+  content: '';
+  background: #E2E2E2;
+}
+  /*Featured section end*/
 /*=================================
   main styling ends here
 =================================*/
