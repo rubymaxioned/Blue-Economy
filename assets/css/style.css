@@ -520,6 +520,29 @@ h5 {
 
 .infographic .wrapper { margin-bottom: 40px; }
 /*Infographic section end*/
+
+/*Subscribe section start*/
+.subscribe { 
+  padding: 40px 10%;
+  background: #5EB2DE; 
+}
+
+.subscribe p {
+  margin-bottom: 10px;
+  color: #8FCBF5;
+  font-size: 15px;
+}
+
+.subscribe p::first-letter { text-transform: uppercase; }
+.subscribe p .capital { text-transform: capitalize; }
+.subscribe { position: relative; }
+
+.subscribe::after {
+  content: '\f1d9';
+  font-family: FontAwesome;
+  position: absolute;
+}
+/*Subscribe section end*/
 /*=================================
   main styling ends here
 =================================*/
