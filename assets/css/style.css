@@ -727,16 +727,46 @@ h5 { margin-bottom: 20px; }
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
+header .wrapper { 
+  width: 95%;
+  align-items: center;
+ }  
 
-.logo-div { width: 25%; }
+.logo-div {
+  flex-basis: 18%;
+  align-items: center;
+  justify-content: center;
+}
 
+.hamburger { display: none; }
+.logo-div span:nth-of-type(2) { width: 75%; }
+
+.nav-list,
+.search { display: block; }
+
+.nav-list li { 
+  padding: 5px;
+  position: relative;
+ }
+
+nav ul li a{ 
+  text-transform: uppercase;
+  color: #9B9B9B;
+  font-size: 14px;
+ }
+
+ nav ul li::after {
+  padding-left: 10px;
+  content: '\2f';
+  font-family: FontAwesome;
+ }
+
+ nav ul li:last-child::after { display: none; }
 
 }  
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
-  
-
 
 
 }  
