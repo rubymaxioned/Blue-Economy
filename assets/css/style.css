@@ -504,6 +504,21 @@ h5 {
   justify-content: center;
   text-indent: 0;
 }
+
+.progress-bar {
+  border: 1px solid #D1DDE1;
+  background: #D1DDE1;
+}
+
+.blue-bar {
+  width: 80px;
+  height: 10px;
+  margin-left: 20px;
+  background: #5BAED7;
+  text-indent: -9999px;
+}
+
+.infographic .wrapper { margin-bottom: 40px; }
 /*Infographic section end*/
 /*=================================
   main styling ends here
