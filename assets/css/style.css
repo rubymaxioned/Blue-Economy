@@ -201,7 +201,7 @@ h2 {
 
 .blue-card2 {
   padding: 30px 10%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background: #5EB2DE;
   color: #ADE3F3;
   font-size: 13px;
@@ -211,6 +211,7 @@ h2 {
 
 .world-content { 
   padding: 20px 5%;
+  margin-bottom: 20px;
   background: #5FACD6;
  }
 
@@ -224,7 +225,7 @@ h2 {
   font-weight: 800;
 }
 
-.world-content p:nth-last-of-type(1) {
+.world-content > p:nth-of-type(1) {
   color: #B9EDFF;
   font-size: 13px;
   line-height: 25px;
@@ -256,16 +257,49 @@ h2 {
   text-indent: 0;
 }
 
-.location-icon {
-  text-indent: -9999px;
-}
+.location-icon,
+.calander-icon { text-indent: -9999px; }
 
-.location-icon::before {
+.location-icon::before { content: '\f041'; }
+.calander-icon::before { content: '\f274'; }
+
+.location-icon::before,
+.calander-icon::before {
   float: left;
-  content: '\f041';
   font-family: FontAwesome;
   text-indent: 0;
 }
+
+.world-info-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+.world-info-div a {
+  border: 1px solid #7B818B;
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+  justify-content: center;
+}
+
+.calander-icon { height: 25px; }
+
+.world-info-div p { 
+  border: 1px solid #7B818B;
+  display: flex;
+  align-items: center;
+  flex-basis: 70%;
+  font-size: 12px;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.world-section .wrapper { margin-bottom: 40px; }
+
+
 /*=================================
   main styling ends here
 =================================*/
