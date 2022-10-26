@@ -330,6 +330,7 @@ h4::after {
   margin: 0 auto 20px;
   position: relative;
  }
+
 .timeline-section li {
   padding: 12px 5%;
   margin-bottom: 10px;
@@ -464,7 +465,45 @@ h5 {
   background: url(https://via.placeholder.com/150X150) center center / cover;
 }
 
-.see1 { background-color: #fff; }
+.see-list li div { 
+  padding: 15px 5%;
+  background-color: #EAEBF7;
+  text-align: center;
+ }
+
+ .see-list li div p:nth-of-type(1) {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.see-list li div p:nth-of-type(2) {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #959A88;
+}
+
+.right-arrow {
+  display: inline-block;
+  position: relative;
+  color: #BDBDBD;
+  text-indent: -9999px;
+}
+
+.right-arrow::before {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  float: left;
+  align-items: center;
+  background: #fff;
+  content: '\f105';
+  font-family: FontAwesome;
+  justify-content: center;
+  text-indent: 0;
+}
 /*Infographic section end*/
 /*=================================
   main styling ends here
