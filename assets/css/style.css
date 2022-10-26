@@ -236,7 +236,8 @@ h2 {
 }
 
 .read-btn,
-.book-btn {
+.book-btn,
+.contact-btn {
   padding: 8px 5%;
   text-transform: uppercase;
   font-size: 12px;
@@ -246,6 +247,11 @@ h2 {
 
 .read-btn { background: #fff; }
 .book-btn { background: #FEE404; }
+
+.contact-btn { 
+  background: #7A7A7A; 
+  color: #F7F7F7;
+}
 
 .world-btn-div {
   margin-bottom: 20px;
@@ -535,12 +541,31 @@ h5 {
 
 .subscribe p::first-letter { text-transform: uppercase; }
 .subscribe p .capital { text-transform: capitalize; }
-.subscribe { position: relative; }
 
-.subscribe::after {
+.email-div { 
+  width: 100%;
+  position: relative; 
+}
+
+.email-div input { 
+  width: 100%; 
+  padding: 10px 5%;
+  border: none;
+  background: #86CCF5;
+}
+
+.email-div::after {
   content: '\f1d9';
   font-family: FontAwesome;
   position: absolute;
+  top: 1px;
+  right: -21px;
+  width: 35px;
+  height: 34px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*Subscribe section end*/
 /*=================================
@@ -551,10 +576,44 @@ h5 {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 20px 5%;
+  background: #2E2E2E;
+  color: #7B7B7B;
+  text-align: center;
+}
 
+footer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
+footer ul {
+  width: 75%;
+  margin: 0 auto 10px;
+}
 
+footer ul li { width: 20px; }
 
+.icon { 
+  position: relative;
+  text-indent: -9999px;
+ }
+
+.icon::before {
+  position: absolute;
+  left: 0;
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: left;
+  color: #fff;
+}
+
+.facebook::before { content: '\f09a'; }
+.twitter::before { content: '\f099'; }
+.google::before { content: '\f0d5'; }
+.linkedin::before { content: '\f0e1 '; }
 
 
  /*=================================
@@ -564,6 +623,7 @@ h5 {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  
 
 
 
