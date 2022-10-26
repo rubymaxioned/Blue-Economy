@@ -184,11 +184,29 @@ header { margin-bottom: 40px; }
 
 .blue-card1 {
   height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
   background: #6FB4E0;
+  justify-content: center;
 }
 
+h2 {
+  color: #FCFDF5;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-
+.blue-card2 {
+  padding: 30px 10%;
+  background: #5EB2DE;
+  font-size: 13px;
+  text-align: center;
+  color: #ADE3F3;
+  line-height: 20px;
+}
 
 
 
