@@ -274,6 +274,7 @@ h2 {
 .location-icon::before,
 .calander-icon::before {
   float: left;
+  color: #000;
   font-family: FontAwesome;
   text-indent: 0;
 }
@@ -338,6 +339,7 @@ h4::after {
  }
 
 .timeline-section li {
+  width: 90%;
   padding: 12px 5%;
   margin-bottom: 10px;
   position: relative;
@@ -465,6 +467,11 @@ h5 {
 /*Featured section end*/
 
 /*Infographic section start*/
+.see-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .see-list li {
   padding: 50px 10px 20px 10px;
   margin-bottom: 10px;
@@ -614,6 +621,7 @@ footer ul li { width: 30px; }
 .twitter::before { content: '\f099'; }
 .google::before { content: '\f0d5'; }
 .linkedin::before { content: '\f0e1 '; }
+footer { padding: 30px 5%; }
 
 
  /*=================================
@@ -621,8 +629,112 @@ footer ul li { width: 30px; }
 =================================*/ 
 
 /*media query starts*/
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+.logo-div span:nth-of-type(2) { width: 65%; }
+.logo-div { align-items: initial; }
+h2 { width: 50%; }
+.blue-card2 { padding: 40px 15%; }
+
+.world-content > p:nth-of-type(1) {
+  width: 80%;
+  margin: 0 auto 30px;
+}
+.timeline-section::before,
+.timeline-section::after { height: 490px; }
+.timeline-section li { width: 90%; }
+.timeline-section li:nth-of-type(1)::after { right: -5.5%; }
+.saving-card { padding: 30px 10%; }
+
+.saving-card > p,
+.saving-btn-div p,
+.see-list li div p:nth-of-type(1),
+.see-list li div p:nth-of-type(2),
+.right-arrow { margin-bottom: 20px; }
+
+.see-list li div { padding: 15px 12%; }
+.right-arrow::before { padding: 10px; }
+
+.see-list li div {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.see-list li { margin-bottom: 20px; }
+.email-div::after { right: -33px; }
+}  
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+.email-div::after { right: -36px; }
+}  
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+h2 { width: 45%; }
+
+.banner-section .wrapper {
+  display: flex;
+  position: relative;
+}
+
+.blue-card1 { flex-basis: 50%; }
+
+.blue-card1 h2 {
+  position: relative;
+  right: 42px;
+  font-size: 30px;
+}
+
+.blue-card2 {
+  padding: 40px 7%;
+  position: absolute;
+  left: 35%;
+  top: 35px;
+  flex-basis: 55%;
+  line-height: 30px;
+}
+
+.banner-section,
+header .wrapper { margin-bottom: 10%; }
+
+h5 { margin-bottom: 20px; }
+
+.saving-btn-div p {
+  width: 40%;
+  margin-bottom: 30px;
+ }
+
+ .see-list {
+  width: 70%;
+  margin: 0 auto;
+ }
+
+ .see-list li div { width: 40%; }
+ .see-list li div p:nth-of-type(2) { 
+  font-size: 13px;
+  line-height: 25px;
+ }
+
+ .progress-bar {
+  width: 70%;
+  margin: 0 auto;
+ }
+
+ .email-div::after { right: -52px; }
+ .timeline-section { width: 70%; }
+}
+
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 995px) {
+
+.logo-div { width: 25%; }
+
+
+}  
+
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
   
 
 
