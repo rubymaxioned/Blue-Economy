@@ -439,7 +439,7 @@ h5 {
   margin-bottom: 15px;
   border: 1px solid #B5B973;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
 }
 
@@ -458,7 +458,13 @@ h5 {
 /*Featured section end*/
 
 /*Infographic section start*/
+.see-list li {
+  padding: 50px 10px 20px 10px;
+  margin-bottom: 10px;
+  background: url(https://via.placeholder.com/150X150) center center / cover;
+}
 
+.see1 { background-color: #fff; }
 /*Infographic section end*/
 /*=================================
   main styling ends here
