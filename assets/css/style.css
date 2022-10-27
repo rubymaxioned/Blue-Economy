@@ -115,7 +115,7 @@ li {
   width: 30px;
   height: 24px;
   padding: 6px;
-  border: 1p solid;
+  border: 1px solid;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -828,8 +828,6 @@ nav ul li:last-child::after { display: none; }
 .email-div::after { right: -68px; }
 .subscribe .wrapper { width: 50%; }
 
+}
+
 /*media query for 1024px starts here*/
-@media only screen and (min-width: 1024px) {
-
-
-}  
