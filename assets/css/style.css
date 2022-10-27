@@ -567,12 +567,12 @@ h5 {
   background: #86CCF5;
 }
 
-.submit { 
+button { 
   position: relative;
   text-indent: -9999px;
  }
 
-.submit::before {
+button::before {
   content: '\f1d9';
   font-family: FontAwesome;
   background: #fff;
