@@ -888,4 +888,54 @@ header .wrapper { margin-bottom: 5%; }
 
 .world-content { padding: 60px 0 0; }
 h3 { margin-bottom: 30px; }
+.timeline-section li:nth-of-type(1)::after { height: 50px; }
+
+.saving-btn-div { 
+  display: flex;
+  justify-content: space-around;
+}
+
+.saving-btn-div p { 
+  padding: 6px 5% 3px 10%;
+  font-size: 11px;
+  flex-basis: 40%;
+ }
+
+.saving-btn-div a {
+  flex-basis: 20%;
+  padding: 10px 6%;
+  align-self: baseline;
+  font-size: 10px;
+}
+
+.saving-btn-div p::before { padding: 7px 5% 3px 4%; }
+.email-div::after { right: -40px; }
+
+footer .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .wrapper p { 
+  flex-basis: 50%;
+  text-align: initial;
+ }
+
+.footer-icon { 
+  display: flex;
+  flex-basis: 50%;
+}
+
+.footer-icon ul {
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  align-items: center;
+}
+
+footer p { margin-bottom: 0; }
+.see-list li { padding: 15% 10px 20px 10px; }
 }
