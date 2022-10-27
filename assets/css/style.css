@@ -161,13 +161,17 @@ header .wrapper {
 .logo-div {
   width: 61%;
   display: flex;
+  color: #A1A1A1;
   align-items: center;
   flex-direction: column;
   font-size: 13px;
   line-height: 20px;
 }
 
-h1 .dark { font-weight: bold; }
+h1 .dark { 
+  color: #000;
+  font-weight: bold;
+ }
 
 .nav-list,
 .search { display: none; }
@@ -831,3 +835,57 @@ nav ul li:last-child::after { display: none; }
 }
 
 /*media query for 1024px starts here*/
+@media only screen and (min-width: 995px) {
+.blue-card1 { padding: 35px 0; }
+.blue-card2 { padding: 9% 10%; }
+
+nav ul li a { font-size: 10px; }
+.logo { font-size: 11px; }
+
+.blue-card1::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 36%;
+  border: 7px solid #5F6056;
+  transform: rotate(51deg);
+  background-color: #fff;
+  top: 51%;
+  left: 7%;
+  z-index: -2;
+}
+
+.blue-card2::before {
+  content: '';
+    position: absolute;
+    width: 20%;
+    height: 36%;
+    border: 7px solid #5F6056;
+    transform: rotate(62deg);
+    background-color: #fff;
+    top: -6%;
+    left: 42%;
+    z-index: -2;
+}
+
+header .wrapper { margin-bottom: 5%; }
+.world-section .wrapper { width: 100%; }
+
+.world-btn-div {
+  justify-content: center;
+  gap: 5px;
+}
+
+.read-btn, .book-btn, .contact-btn {
+  padding: 12px 5%;
+  font-size: 10px;
+} 
+
+.blue-card1 h2 { 
+  font-size: 38px;
+  font-weight: 800; 
+}
+
+.world-content { padding: 60px 0 0; }
+h3 { margin-bottom: 30px; }
+}
