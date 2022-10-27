@@ -593,6 +593,11 @@ h5 {
 .submit { flex-basis: 20%; }
 
 .email-div form input { width: 100%; }
+
+.subscribe-div form {
+  display: flex;
+  align-items: center;
+}
 /*Subscribe section end*/
 /*=================================
   main styling ends here
