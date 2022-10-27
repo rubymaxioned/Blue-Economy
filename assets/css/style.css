@@ -464,6 +464,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-indent: -9999px;
 }
 
 .edit-btn::after {
@@ -472,6 +473,7 @@ h5 {
   content: '\f24a';
   background: #B5B974;
   font-family: FontAwesome;
+  text-indent: 0;
 }
 
 .featured-articles { margin-bottom: 50px; }
@@ -560,31 +562,37 @@ h5 {
 .subscribe p::first-letter { text-transform: uppercase; }
 .subscribe p .capital { text-transform: capitalize; }
 
-.email-div { 
-  width: 100%;
-  position: relative; 
-}
-
 .email-div input { 
-  width: 100%; 
-  padding: 10px 5%;
   border: none;
   background: #86CCF5;
 }
 
-.email-div::after {
+.submit { 
+  position: relative;
+  text-indent: -9999px;
+ }
+
+.submit::before {
   content: '\f1d9';
   font-family: FontAwesome;
-  position: absolute;
-  top: 1px;
-  right: -21px;
-  width: 35px;
-  height: 34px;
   background: #fff;
   display: flex;
+  position: absolute;
+  top: 0px;
   justify-content: center;
   align-items: center;
+  text-indent: 0;
 }
+
+.subscribe-div { 
+  display: flex;
+  align-items: center;
+ }
+
+.email-div { flex-basis: 80%; }
+.submit { flex-basis: 20%; }
+
+.email-div form input { width: 100%; }
 /*Subscribe section end*/
 /*=================================
   main styling ends here
