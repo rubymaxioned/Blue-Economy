@@ -565,39 +565,47 @@ h5 {
 .email-div input { 
   border: none;
   background: #86CCF5;
+  padding: 10px;
 }
 
-button { 
+.input-control button { 
+  outline: none;
+  border: none;
   position: relative;
-  text-indent: -9999px;
+  text-indent: -99999px;
+  padding: 10px 20px;
  }
 
 button::before {
   content: '\f1d9';
-  font-family: FontAwesome;
-  background: #fff;
-  display: flex;
+  font-family: "FontAwesome";
   position: absolute;
-  top: 0px;
-  justify-content: center;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-indent: 0;
 }
 
 .subscribe-div { 
   display: flex;
   align-items: center;
+  justify-content: center;
  }
 
 .email-div { flex-basis: 80%; }
 .submit { flex-basis: 20%; }
 
-.email-div form input { width: 100%; }
+.email-div input { width: 100%; }
 
 .subscribe-div form {
   display: flex;
   align-items: center;
+  flex-basis: 100%;
 }
+
+.subscribe p { text-align: initial; }
+.email-div { flex-basis: 80%; }
+.input-control { flex-basis:  20%; }
 /*Subscribe section end*/
 /*=================================
   main styling ends here
